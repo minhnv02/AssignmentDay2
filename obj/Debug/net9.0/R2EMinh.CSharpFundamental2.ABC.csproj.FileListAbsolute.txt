@@ -12,3 +12,4 @@ F:\R2EMinh.CSharpFundamental2.ABC\obj\Debug\net9.0\refint\R2EMinh.CSharpFundamen
 F:\R2EMinh.CSharpFundamental2.ABC\obj\Debug\net9.0\R2EMinh.CSharpFundamental2.ABC.pdb
 F:\R2EMinh.CSharpFundamental2.ABC\obj\Debug\net9.0\R2EMinh.CSharpFundamental2.ABC.genruntimeconfig.cache
 F:\R2EMinh.CSharpFundamental2.ABC\obj\Debug\net9.0\ref\R2EMinh.CSharpFundamental2.ABC.dll
+F:\R2EMinh.CSharpFundamental2.ABC\obj\Debug\net9.0\R2EMinh.CSharpFundamental2.ABC.sourcelink.json
