@@ -1,5 +1,4 @@
-﻿using System;
-using CarManagementSystem.Models;
+﻿using CarManagementSystem.Models;
 
 class Program
 {
@@ -10,9 +9,9 @@ class Program
             string make = Helper.GetNonEmptyString("Enter car make: ");
             string model = Helper.GetNonEmptyString("Enter car model: ");
             int year = Helper.GetValidYear();
-            DateTime lastMaintenance = Helper.GetValidDateTime("Enter last maintenance date (yyyy-MM-dd): ", "yyyy-MM-dd");
+            DateTime lastMaintenance = Helper.GetValidMaintenanceDate(year);
 
-            Car car = Helper.GetCarType(make, model, year, lastMaintenance);
+            Car car = Helper.CreateCar(make, model, year, lastMaintenance);
             car.DisplayDetails();
 
             if (Helper.ConfirmAction("Do you want to refuel/charge? (Y/N): "))
@@ -26,6 +25,9 @@ class Program
                         break;
                     case ElectricCar electricCar:
                         electricCar.Charge(refuelChargeTime);
+                        break;
+                    default:
+                        Console.WriteLine("Unknown car type.");
                         break;
                 }
             }
